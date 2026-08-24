@@ -96,8 +96,8 @@
   .link-card{
     display:block;
     text-decoration:none;
-    border-radius:14px;
-    padding:18px 20px;
+    border-radius:16px;
+    padding:20px 22px;
     position:relative;
     border:1px solid var(--line);
     background:var(--bg-1);
@@ -106,21 +106,48 @@
   }
   .link-card:active{transform:scale(0.98);}
 
-  .link-card.primary{
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:22px;height:22px;
+    border-radius:50%;
+    font-size:10px;
+    font-weight:900;
+    margin-right:8px;
+    vertical-align:middle;
+  }
+
+  .link-card.tier-1{
     background:linear-gradient(135deg, var(--ember-tint), #fffaf4 70%);
     border:1px solid var(--ember-soft);
+    box-shadow:0 4px 14px rgba(217,105,30,0.10);
   }
-  .link-card.primary .eyebrow{color:var(--ember);}
-  .link-card.primary::after{content:"→";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--ember);font-size:18px;}
+  .link-card.tier-1 .eyebrow{color:var(--ember);}
+  .link-card.tier-1 .badge{background:var(--ember);color:#fff;}
+  .link-card.tier-1::after{content:"→";position:absolute;right:22px;top:50%;transform:translateY(-50%);color:var(--ember);font-size:19px;}
 
-  .link-card.secondary{
+  .link-card.tier-2{
     background:linear-gradient(135deg, var(--dusk-tint), #fdfcff 70%);
     border:1px solid var(--dusk-soft);
+    box-shadow:0 4px 14px rgba(95,79,160,0.08);
   }
-  .link-card.secondary .eyebrow{color:var(--dusk);}
-  .link-card.secondary::after{content:"→";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--dusk);font-size:18px;}
+  .link-card.tier-2 .eyebrow{color:var(--dusk);}
+  .link-card.tier-2 .badge{background:var(--dusk);color:#fff;}
+  .link-card.tier-2::after{content:"→";position:absolute;right:22px;top:50%;transform:translateY(-50%);color:var(--dusk);font-size:19px;}
 
-  .eyebrow{font-size:10px;letter-spacing:0.15em;font-weight:700;margin-bottom:6px;}
+  .link-card.tier-3{
+    background:var(--bg-1);
+    border:1px dashed var(--line);
+    box-shadow:none;
+    padding:16px 22px;
+  }
+  .link-card.tier-3 .eyebrow{color:var(--ink-dim);}
+  .link-card.tier-3 .badge{background:transparent;border:1px solid var(--ink-dim);color:var(--ink-dim);}
+  .link-card.tier-3 .title{font-size:14.5px;}
+  .link-card.tier-3::after{content:"→";position:absolute;right:22px;top:50%;transform:translateY(-50%);color:var(--ink-dim);font-size:17px;}
+
+  .eyebrow{font-size:10px;letter-spacing:0.15em;font-weight:700;margin-bottom:8px;}
   .title{font-size:16.5px;font-weight:900;color:var(--ink);margin-bottom:4px;}
   .desc{font-size:11.5px;color:var(--ink-dim);line-height:1.6;padding-right:20px;}
 
@@ -154,29 +181,29 @@
 
   <div class="header">
     <div class="name">𝐙𝐈𝐇𝐄𝐍</div>
-    <div class="tagline">人生を変える、きっかけを。</div>
+    <div class="tagline">届く発信には、理由がある。</div>
   </div>
 
   <div class="divider"></div>
 
   <div class="links">
 
-    <a href="https://www.instagram.com/channel/AbZMiwyKkmkk-XxM" class="link-card primary">
-      <div class="eyebrow">OPEN COMMUNITY</div>
-      <div class="title">NEXT LEVEL｜共に進む仲間へ</div>
-      <div class="desc">オープンコミュニティ。毎日ひとつのテーマについて発信中。皆さんのコメントもお待ちしてます！！</div>
-    </a>
-
-    <a href="zihen-form-corp.html" class="link-card secondary">
-      <div class="eyebrow">FOR BUSINESS｜法人の方へ</div>
+    <a href="zihen-form-corp.html" class="link-card tier-1">
+      <div class="eyebrow"><span class="badge">01</span>FOR BUSINESS｜法人の方へ</div>
       <div class="title">SNSマーケティング・コンサル・運用（法人向け）</div>
       <div class="desc">採用のCPA削減、ブランドの認知・集客支援など、SNSで成果を出したい企業様はこちら</div>
     </a>
 
-    <a href="zihen-form-personal.html" class="link-card secondary">
-      <div class="eyebrow">FOR YOU｜個人の方へ</div>
+    <a href="zihen-form-personal.html" class="link-card tier-2">
+      <div class="eyebrow"><span class="badge">02</span>FOR YOU｜個人の方へ</div>
       <div class="title">SNSマーケティング・コンサル・運用（個人向け）</div>
       <div class="desc">発信の伸ばし方、アカウント設計、運用の仕組み化まで。個人の方のご相談はこちら</div>
+    </a>
+
+    <a href="https://www.instagram.com/channel/AbZMiwyKkmkk-XxM" class="link-card tier-3">
+      <div class="eyebrow"><span class="badge">03</span>OPEN COMMUNITY</div>
+      <div class="title">NEXT LEVEL｜共に進む仲間へ</div>
+      <div class="desc">オープンコミュニティ。毎日ひとつのテーマについて発信中。皆さんのコメントもお待ちしてます！！</div>
     </a>
 
   </div>
