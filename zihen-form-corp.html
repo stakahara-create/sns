@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zihen｜SNSマーケティング ご相談（法人向け）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-0:#faf7f2;
+    --bg-1:#ffffff;
+    --dusk:#5f4fa0;
+    --dusk-deep:#4a3d80;
+    --dusk-soft:#e4e0f2;
+    --line:#e8e2d8;
+    --ink:#211d18;
+    --ink-dim:#8a8377;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:var(--bg-0);color:var(--ink);font-family:"Zen Kaku Gothic New", sans-serif;-webkit-font-smoothing:antialiased;}
+  body{min-height:100vh;display:flex;justify-content:center;}
+  .frame{width:100%;max-width:460px;min-height:100vh;padding:0 0 60px;}
+
+  .top{
+    padding:40px 28px 22px;
+    text-align:center;
+    background:linear-gradient(180deg, var(--dusk-soft) 0%, var(--bg-0) 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow-top{font-size:11px;letter-spacing:0.18em;color:var(--dusk);font-weight:700;margin-bottom:12px;}
+  .mark{width:60px;height:60px;margin:0 auto 14px;display:block;filter:drop-shadow(0 2px 4px rgba(33,29,24,0.15));}
+  .brand{font-size:24px;font-weight:900;letter-spacing:0.06em;color:var(--ink);}
+  .mark{width:60px;height:60px;margin:0 auto 14px;display:block;filter:drop-shadow(0 2px 4px rgba(33,29,24,0.15));}
+  .headline{margin-top:16px;font-family:"Shippori Mincho", serif;font-size:15px;line-height:2;color:#5a544a;}
+  .headline .accent{color:var(--dusk);}
+
+  form{padding:28px 24px 0;display:flex;flex-direction:column;gap:16px;}
+
+  .field label{display:block;font-size:11.5px;letter-spacing:0.05em;color:var(--ink-dim);margin-bottom:7px;}
+  .field label .req{color:var(--dusk);margin-left:3px;}
+  .field input, .field select, .field textarea{
+    width:100%;background:var(--bg-1);border:1px solid var(--line);border-radius:10px;
+    padding:13px 14px;color:var(--ink);font-family:inherit;font-size:14px;outline:none;
+    transition:border-color .15s ease;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{border-color:var(--dusk);}
+  .field textarea{resize:vertical;min-height:100px;line-height:1.7;}
+  .field select{appearance:none;background-image:linear-gradient(45deg, transparent 50%, var(--ink-dim) 50%), linear-gradient(135deg, var(--ink-dim) 50%, transparent 50%);background-position:calc(100% - 20px) 50%, calc(100% - 15px) 50%;background-size:5px 5px, 5px 5px;background-repeat:no-repeat;}
+
+  .submit{
+    margin-top:6px;padding:16px;border:none;border-radius:12px;
+    font-family:inherit;font-size:14.5px;font-weight:900;letter-spacing:0.05em;
+    cursor:pointer;color:#ffffff;
+    background:linear-gradient(135deg, var(--dusk), var(--dusk-deep));
+  }
+  .note{margin-top:2px;font-size:10.5px;line-height:1.7;color:#a39c8d;text-align:center;}
+
+  .track{padding:20px 28px 0;display:flex;justify-content:center;gap:10px;}
+  .track span{font-size:10px;letter-spacing:0.1em;color:#b8b1a3;}
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <div class="top">
+    <div class="eyebrow-top">FOR BUSINESS</div>
+    <div class="brand">𝐙𝐈𝐇𝐄𝐍</div>
+    <div class="headline">発信の力で、人も、事業も動かしてきた。<br><span class="accent">SNSマーケティング・コンサル・運用</span></div>
+  </div>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID_CORP" method="POST">
+    <input type="hidden" name="種別" value="法人向け相談">
+
+    <div class="field">
+      <label>会社名<span class="req">必須</span></label>
+      <input type="text" name="会社名" required>
+    </div>
+    <div class="field">
+      <label>ご担当者名<span class="req">必須</span></label>
+      <input type="text" name="お名前" required>
+    </div>
+    <div class="field">
+      <label>メールアドレス<span class="req">必須</span></label>
+      <input type="email" name="メールアドレス" required>
+    </div>
+    <div class="field">
+      <label>ご相談内容</label>
+      <select name="ご相談内容">
+        <option value="採用・人材関連のSNS集客">採用・人材関連のSNS集客</option>
+        <option value="ブランド・店舗の認知/集客">ブランド・店舗の認知/集客</option>
+        <option value="アカウント運用代行">アカウント運用代行</option>
+        <option value="その他">その他</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>現在の課題・ご要望</label>
+      <textarea name="詳細" placeholder="例）採用のCPAが高く、SNS経由の応募を増やしたい"></textarea>
+    </div>
+
+    <button type="submit" class="submit">この内容で送信する</button>
+    <div class="note">通常2〜3営業日以内にご返信します</div>
+  </form>
+
+  <div class="track"><span>ZIHEN — FOR BUSINESS</span></div>
+
+</div>
+</body>
+</html>
